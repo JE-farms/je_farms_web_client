@@ -106,6 +106,7 @@ export default function page() {
           </div>
         </section>
       </main>
+
     </div>
   );
 }
