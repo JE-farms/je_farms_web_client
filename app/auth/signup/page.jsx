@@ -56,7 +56,7 @@ export default function Page() {
         <Image src='/assets/images/coco_overlay.png' alt='Coconut Overlay' width={1000} height={100} className='absolute w-max h-max top-0 transform rotate-90'/>
       </div>
 
-      <form onSubmit={handleSubmit} className='bg-[#A49979] w-full md:w-1/3 flex flex-col items-center justify-center border-[1px] border-white/70 rounded-3xl py-6 px-12'>
+      <form className='bg-[#A49979] w-full md:w-1/3 flex flex-col items-center justify-center border-[1px] border-white/70 rounded-3xl py-6 px-12'>
         <h1 className='text-4xl tracking-[0.2px] font-bold bg-gradient-to-r from-[#326B23] to-[#FAFAFA] bg-clip-text text-transparent'>Sign Up</h1>
 
         <div className="space-y-6 mt-6">
@@ -83,7 +83,7 @@ export default function Page() {
           />
         </div>
 
-        <button type="submit" className='rounded-full bg-[#326B23] text-white p-2 px-16 mt-6'>
+        <button onClick={handleSubmit} className='rounded-full bg-[#326B23] text-white p-2 px-16 mt-6'>
           {loading ? "Please wait..." : "Sign up"}
         </button>
 
